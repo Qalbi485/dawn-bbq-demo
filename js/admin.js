@@ -58,7 +58,7 @@
       "Collect: *" + C + " " + fmt(o.total) + "* (COD)\n" +
       "Customer: " + o.name + " — " + o.phone + "\n" +
       (o.type === "delivery" ? "Address: " + o.address : "Type: Pickup") + "\n" +
-      "Delivery par cash collect karein."
+      "Collect cash on delivery."
     );
   }
 
@@ -85,7 +85,7 @@
     chat.innerHTML = '<div class="chat-date">Aaj</div>';
     approved = false;
     btn.disabled = false;
-    btn.textContent = "✓ Approve — Rider ko bhejein";
+    btn.textContent = "✓ Approve & Send to Rider";
     bubble(adminMsg(order), false);
   }
 
@@ -96,9 +96,9 @@
       bubble("Approved ✓", true);
       setTimeout(() => {
         bubble(riderMsg(order), true);
-        btn.innerHTML = "🛵 WhatsApp pe Rider ko bhejein";
+        btn.innerHTML = "🛵 Send Rider Message on WhatsApp";
         $("#approveNote").textContent =
-          "Rider ka message ready hai. Real system: aapke WhatsApp me ye message khud ban jayega — aap sirf Rider ke chat me jaake Send dabayenge. Demo me neeche button dabakar dekh lein.";
+          "The rider message is ready. In the real system, this message is built automatically in your WhatsApp — you just open the rider's chat and tap Send. Tap the button below to try it in this demo.";
         btn.onclick = function () {
           window.open(riderWaUrl(order), "_blank");
         };

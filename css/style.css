@@ -385,12 +385,6 @@ a { color: inherit; text-decoration: none; }
 .ghost-link { display: inline-block; margin-top: 22px; color: var(--amber); font-weight: 700; font-size: 14px; border-bottom: 1px solid rgba(251, 146, 60, 0.4); padding-bottom: 2px; }
 
 /* ---------- How tab ---------- */
-.how-step { display: flex; gap: 14px; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; margin-bottom: 12px; }
-.how-step .ic { width: 46px; height: 46px; border-radius: 13px; background: rgba(251, 146, 60, 0.12); display: grid; place-items: center; font-size: 22px; flex-shrink: 0; }
-.how-step h3 { font-size: 15.5px; margin-bottom: 4px; }
-.how-step p { font-size: 13px; line-height: 1.55; color: var(--dim); }
-
-/* ---------- Toast ---------- */
 .toast {
   position: absolute;
   left: 50%;
