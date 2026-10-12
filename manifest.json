@@ -1,0 +1,13 @@
+{
+  "name": "Dawn — Order Online",
+  "short_name": "Dawn",
+  "start_url": "index.html",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#0e1013",
+  "theme_color": "#0e1013",
+  "description": "Dawn BBQ & Fast Food — order online",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

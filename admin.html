@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b141a" />
+  <title>Dawn — Admin WhatsApp (Demo)</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="phone">
+    <span class="demo-tag">DEMO</span>
+
+    <header class="wa-top">
+      <div class="wa-av"><img src="img/logo.png" alt="Dawn BBQ Restaurant" /></div>
+      <div>
+        <b>Dawn BBQ — Orders</b>
+        <small>admin WhatsApp — orders yahan aate hain</small>
+      </div>
+    </header>
+
+    <div class="chat" id="chat"></div>
+
+    <div class="approve-bar">
+      <button class="approve-btn" id="approveBtn" type="button">
+        ✓ Approve — Rider ko bhejein
+      </button>
+      <p class="approve-note" id="approveNote">
+        Real system: ye order seedha aapke WhatsApp pe aata hai. Aap sirf message ko rider ke WhatsApp pe forward karte hain — 2 tap, koi app nahi.
+      </p>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
