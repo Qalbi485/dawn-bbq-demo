@@ -23,8 +23,8 @@
         { name: "Mint Margarita", qty: 2, price: 250 },
       ],
       subtotal: 3600, fee: 0, total: 3600,
-      type: "delivery", name: "Ali Khan", phone: "0300 1234567",
-      address: "House 12, Street 5, Gulberg III, Lahore", note: "Kam mirch"
+      name: "Ali Khan", phone: "0300 1234567",
+      address: "House 12, Street 5, Gulberg III, Lahore", note: "Less spice"
     };
   }
 
@@ -40,11 +40,11 @@
       "────────────\n" +
       lines + "\n" +
       "────────────\n" +
-      (o.type === "pickup" ? "Type: Pickup\n" : "Type: Delivery\n") +
+      "Type: Delivery\n" +
       "Total: *" + C + " " + fmt(o.total) + "* (COD)\n" +
       "Name: " + o.name + "\n" +
       "Phone: " + o.phone + "\n" +
-      (o.type === "delivery" ? "Address: " + o.address + "\n" : "") +
+      "Address: " + o.address + "\n" +
       (o.note ? "Note: " + o.note + "\n" : "") +
       "Payment: Cash on Delivery"
     );
@@ -57,7 +57,7 @@
       "Items: " + short + "\n" +
       "Collect: *" + C + " " + fmt(o.total) + "* (COD)\n" +
       "Customer: " + o.name + " — " + o.phone + "\n" +
-      (o.type === "delivery" ? "Address: " + o.address : "Type: Pickup") + "\n" +
+      "Address: " + o.address + "\n" +
       "Collect cash on delivery."
     );
   }
@@ -82,7 +82,7 @@
 
   function init() {
     order = loadOrder();
-    chat.innerHTML = '<div class="chat-date">Aaj</div>';
+    chat.innerHTML = '<div class="chat-date">Today</div>';
     approved = false;
     btn.disabled = false;
     btn.textContent = "✓ Approve & Send to Rider";
